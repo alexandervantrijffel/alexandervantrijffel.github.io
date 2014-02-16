@@ -1,3 +1,44 @@
+html,body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+li { list-style: none; }
+
 html {
   height: 100%;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+}
+h1, .mh1 {
+  font-weight: 700;
+  font-size: 2.4em;
+}
+
+div#page-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  .page-container {
+    background-color: #2D343E;
+    text-align: center;
+    padding: 32px 15px;
+
+    div {
+      margin: 15px;
+    }
+    .title {
+      @extend .mh1;
+    }
+    .main {
+      font-size: 2em;
+    }
+  }
+  .page-container-dark {
+    color: #eeeeee;
+    text-shadow:1px 1px 0 rgba(0,0,0,.1);
+  }
 }

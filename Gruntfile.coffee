@@ -25,6 +25,24 @@ module.exports = (grunt) ->
                     message: 'Compiled sass'
 
         watch:
+            css: {
+                files: 'pub/**/*.css',
+                options: {
+                    livereload: true
+                }
+            }
+            js: {
+                files: 'pub/**/*.js',
+                options: {
+                    livereload: true
+                }
+            }
+            html: {
+                files: '**/*.html',
+                options: {
+                    livereload: true
+                }
+            }
             coffee:
                 files: 'src/coffee/**/*.coffee',
                 tasks: ['coffee:compile', 'notify:coffee']
@@ -40,20 +58,20 @@ module.exports = (grunt) ->
                 options:
                     bare: true
                 files:
-                    'structura.js': ['src/coffee/*.coffee']
+                    'pub/scripts/structura.js': ['src/coffee/*.coffee']
 
         jade:
             compile:
                 options:
                     data:
-                        debug: false
+                        debug: true
                 files:
                     "index.html": "src/jade/index.jade"
 
         sass:
             compile:
                 files:
-                    'main.css': 'src/scss/main.scss'
+                    'pub/styles/main.css': 'src/scss/main.scss'
         cssmin:
             minify:
                 expand: true,
@@ -67,7 +85,7 @@ module.exports = (grunt) ->
                 options:
                     banner: "<%= meta.banner %>"
                 files:
-                    "structura.min.js" : ['structura.js']
+                    "pub/scripts/structura.js" : ['pub/scripts/structura.js']
 
     grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.loadNpmTasks "grunt-contrib-jade"

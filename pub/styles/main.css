@@ -1,0 +1,35 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400);
+@import url('http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+html {
+  height: 100%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333; }
+
+h1, .mh1, div#page-content .page-container .title {
+  font-weight: 700;
+  font-size: 2.4em; }
+
+div#page-content {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  div#page-content .page-container {
+    background-color: #2D343E;
+    text-align: center;
+    padding: 32px 15px; }
+    div#page-content .page-container div {
+      margin: 15px; }
+    div#page-content .page-container .main {
+      font-size: 2em; }
+  div#page-content .page-container-dark {
+    color: #eeeeee;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); }

@@ -1,1 +1,3 @@
-Project for http://alexandervantrijffel.github.io page
+Project files for http://structura.ws
+
+Alexander van Trijffel

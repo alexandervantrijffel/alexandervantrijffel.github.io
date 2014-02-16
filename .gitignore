@@ -1,0 +1,10 @@
+.idea
+*.js
+*.map
+*.html
+node_modules
+*.css
+npm-debug.log
+run.sh
+.idea
+.sass-cache

@@ -40,7 +40,7 @@ module.exports = (grunt) ->
                 options:
                     bare: true
                 files:
-                    'dist/structura.js': ['src/coffee/*.coffee']
+                    'structura.js': ['src/coffee/*.coffee']
 
         jade:
             compile:
@@ -48,18 +48,18 @@ module.exports = (grunt) ->
                     data:
                         debug: false
                 files:
-                    "dist/index.html": "src/jade/index.jade"
+                    "index.html": "src/jade/index.jade"
 
         sass:
             compile:
                 files:
-                    'dist/main.css': 'src/scss/main.scss'
+                    'main.css': 'src/scss/main.scss'
         cssmin:
             minify:
                 expand: true,
-                cwd: 'dist',
+                cwd: '',
                 src: ['*.css', '!*.min.css'],
-                dest: 'dist',
+                dest: '',
                 ext: '.min.css'
 
         uglify:
@@ -67,7 +67,7 @@ module.exports = (grunt) ->
                 options:
                     banner: "<%= meta.banner %>"
                 files:
-                    "dist/structura.min.js" : ['dist/structura.js']
+                    "structura.min.js" : ['structura.js']
 
     grunt.loadNpmTasks "grunt-contrib-watch"
     grunt.loadNpmTasks "grunt-contrib-jade"

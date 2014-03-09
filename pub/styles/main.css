@@ -283,3 +283,24 @@ div#pagecontent {
     font-size: 1.4em;
     position: relative;
     font-weight: 500; }
+
+@media screen and (max-width: 1202px) {
+  .service {
+    max-width: 276px; }
+    .service > div {
+      max-width: 204px; } }
+
+@media screen and (max-width: 938px) {
+  .service {
+    max-width: 212px;
+    padding: 0 6px; }
+    .service > div {
+      max-width: 152px; } }
+
+@media screen and (max-width: 746px) {
+  .service {
+    max-width: 100%;
+    float: none; }
+    .service > div {
+      max-width: 100%;
+      float: none; } }

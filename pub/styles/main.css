@@ -1,5 +1,6 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:600,400);
-@import url('http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css');
+@import url(//fonts.googleapis.com/css?family=Open+Sans:600,400);
+@import url(//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
 html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
   margin: 0;
   padding: 0; }
@@ -7,29 +8,239 @@ html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
 li {
   list-style: none; }
 
+h1, .mh1 {
+  font-weight: 700;
+  font-size: 2.8em; }
+
+h2, .mh2, .centralcontainer .title {
+  font-weight: 700;
+  font-size: 2em; }
+
+.nolink {
+  color: #333333 !important;
+  cursor: default !important;
+  text-decoration: none !important; }
+
+.debug {
+  border: 2px solid red; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.alpha60, #jumbotron div span {
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: #212121;
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(33, 33, 33, 0.6);
+  /* For IE 5.5 - 7*/
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99333333, endColorstr=#99333333);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99333333, endColorstr=#99333333)"; }
+
+.minimalrounded, #jumbotron div span {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -khtml-border-radius: 3px; }
+
+.rounded {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -khtml-border-radius: 10px; }
+
+.withn {
+  margin-top: 12px; }
+
 html {
   height: 100%; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  color: #333333; }
+  color: #333333;
+  padding-top: 24px; }
 
-h1, .mh1, div#page-content .page-container .title {
-  font-weight: 700;
-  font-size: 2.4em; }
+#pageheader {
+  text-align: right;
+  padding: 6px 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  position: fixed;
+  z-index: 1030;
+  overflow: visible;
+  background-color: #fff; }
+  #pageheader ul {
+    font-size: 0.8em; }
+    #pageheader ul li {
+      display: inline;
+      padding-right: 24px; }
+      #pageheader ul li i {
+        display: inline-block;
+        padding-right: 8px; }
+      #pageheader ul li a {
+        color: #333333;
+        cursor: pointer; }
 
-div#page-content {
+div#headerspace {
+  height: 40px; }
+
+div#pagecontent {
   position: relative;
   width: 100%;
+  text-align: center;
   overflow: hidden; }
-  div#page-content .page-container {
-    background-color: #2D343E;
+  div#pagecontent .dgrey {
+    color: #eeeeee; }
+  div#pagecontent .dblue {
+    color: #112637; }
+
+#mainlogo {
+  width: 200px; }
+
+.pagecontainer, .centralcontainer, .pagecontainerdark {
+  padding: 48px;
+  margin: 16px auto;
+  text-align: center; }
+
+.contentwrap {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+#menu {
+  padding: 0 48px; }
+  #menu .contentwrap {
+    text-align: left; }
+
+.centralcontainer {
+  text-align: center; }
+  .centralcontainer div {
+    margin: 15px auto; }
+  .centralcontainer .main {
+    font-size: 1.4em;
+    width: 90%;
+    margin: 15px auto;
+    text-align: center; }
+
+.pagecontainerdark {
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+  background-color: #2D343E;
+  color: #eeeeee; }
+
+#footer {
+  color: #eeeeee;
+  font-size: 0.8em; }
+  #footer div.col {
+    width: 33%;
+    float: left;
     text-align: center;
-    padding: 32px 15px; }
-    div#page-content .page-container div {
-      margin: 15px; }
-    div#page-content .page-container .main {
-      font-size: 2em; }
-  div#page-content .page-container-dark {
+    margin-top: 6px; }
+    #footer div.col#midcol {
+      margin-top: 0; }
+    #footer div.col ul {
+      margin: 0 auto;
+      max-width: 200px; }
+      #footer div.col ul li.social {
+        display: inline-block;
+        padding: 3px 1px; }
+        #footer div.col ul li.social a {
+          background-image: url(../img/sprite-map.png);
+          background-size: auto;
+          background-clip: border-box;
+          background-attachment: scroll;
+          width: 37px;
+          height: 37px;
+          display: inline-block; }
+        #footer div.col ul li.social.twitter a {
+          background-position: 0px -274px; }
+        #footer div.col ul li.social.linkedin a {
+          background-position: 0px -200px; }
+        #footer div.col ul li.social.github a {
+          background-position: 0px -421px; }
+    #footer div.col #followmeheader {
+      font-weight: 700;
+      margin-bottom: 6px; }
+  #footer div.first {
+    text-align: left;
+    padding-left: 48px; }
+  #footer img#footerlogo {
+    width: 180px; }
+
+#scrolltotop {
+  background-color: #000 !important; }
+
+#jumbotron {
+  background: url('../img/rotterdam.jpg') no-repeat right center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  height: 400px;
+  margin: 0 0 48px 0; }
+  #jumbotron div div {
+    float: left;
+    width: 50%;
+    max-width: 440px;
+    position: relative; }
+  #jumbotron div span {
     color: #eeeeee;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); }
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
+    padding: 8px 24px;
+    display: inline-block;
+    position: relative; }
+    #jumbotron div span#companytitle {
+      top: 80px; }
+      #jumbotron div span#companytitle h1 {
+        font-size: 4em;
+        display: inline; }
+    #jumbotron div span#companyheader {
+      top: 102px;
+      max-width: 386px;
+      width: 100%;
+      text-align: center; }
+      #jumbotron div span#companyheader h2 {
+        display: inline-block; }
+    #jumbotron div span#companysubtitle {
+      top: 120px;
+      text-align: left;
+      max-width: 386px;
+      width: 100%;
+      text-align: center; }
+      #jumbotron div span#companysubtitle h2 {
+        display: inline-block; }
+
+#headlines #headerwrap {
+  text-align: left; }
+#headlines h3 {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 12px;
+  line-height: 2em;
+  border-bottom: 2px solid #40B1B1; }
+#headlines .service {
+  float: left;
+  width: 368px;
+  margin: 15px 0;
+  padding-right: 24px; }
+  #headlines .service > div {
+    float: left;
+    width: 100%;
+    max-width: 292px;
+    text-align: left; }
+  #headlines .service i {
+    width: 48px !important;
+    content: "";
+    display: block;
+    float: left;
+    color: #40B1B1;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+  #headlines .service span {
+    display: inline-block;
+    top: -3px;
+    font-size: 1.4em;
+    position: relative;
+    font-weight: 500; }

@@ -307,4 +307,8 @@ div#pagecontent {
     float: none; }
     .service > div {
       max-width: 100%;
-      float: none; } }
+      float: none; }
+  .centralcontainer .main {
+    font-size: 1em; }
+  h2, .mh2, .centralcontainer .title {
+    font-size: 1.6em; } }

@@ -15,7 +15,7 @@
 			width: 50%;
 			max-width: 440px;
 			position: relative;
-			@media screen and (max-width: $breaksmall) {
+			@media only screen and (max-width: $breaksmall) {
 				float: none;
 				width: 100%;
 				max-width: 100%;
@@ -46,10 +46,10 @@
 				max-width: 386px;				
 				text-align: center;
 
-				@media screen and (max-width: $breaklarge) {
+				@media only screen and (max-width: $breaklarge) {
 					left: 0;
 				}
-				@media screen and (max-width: $breaksmall) {
+				@media only screen and (max-width: $breaksmall) {
 					font-size: 1em;
 				}
 				h2 {
@@ -65,10 +65,10 @@
 				max-width: 386px;				
 				text-align: center;
 
-				@media screen and (max-width: $breaklarge) {
+				@media only screen and (max-width: $breaklarge) {
 					left: 0;
 				}
-				@media screen and (max-width: $breaksmall) {
+				@media only screen and (max-width: $breaksmall) {
 					font-size: 1em;
 				}
 				h2 {

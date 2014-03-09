@@ -139,14 +139,14 @@ div#pagecontent {
     float: left;
     text-align: center;
     margin-top: 6px; }
-    @media screen and (max-width: 1202px) { }
-    @media screen and (max-width: 938px) {
+    @media only screen and (max-width: 1202px) { }
+    @media only screen and (max-width: 938px) {
       #footer div.col {
         font-size: 1.2em;
         width: 100%;
         float: none;
         margin-bottom: 36px; } }
-    @media screen and (max-width: 746px) { }
+    @media only screen and (max-width: 746px) { }
     #footer div.col#midcol {
       margin-top: 0; }
     #footer div.col ul {
@@ -198,7 +198,7 @@ div#pagecontent {
     width: 50%;
     max-width: 440px;
     position: relative; }
-    @media screen and (max-width: 746px) {
+    @media only screen and (max-width: 746px) {
       #jumbotron div div {
         float: none;
         width: 100%;
@@ -220,10 +220,10 @@ div#pagecontent {
       width: 386px\9;
       max-width: 386px;
       text-align: center; }
-      @media screen and (max-width: 1202px) {
+      @media only screen and (max-width: 1202px) {
         #jumbotron div span#companyheader {
           left: 0; } }
-      @media screen and (max-width: 746px) {
+      @media only screen and (max-width: 746px) {
         #jumbotron div span#companyheader {
           font-size: 1em; } }
       #jumbotron div span#companyheader h2 {
@@ -235,10 +235,10 @@ div#pagecontent {
       width: 386px\9;
       max-width: 386px;
       text-align: center; }
-      @media screen and (max-width: 1202px) {
+      @media only screen and (max-width: 1202px) {
         #jumbotron div span#companysubtitle {
           left: 0; } }
-      @media screen and (max-width: 746px) {
+      @media only screen and (max-width: 746px) {
         #jumbotron div span#companysubtitle {
           font-size: 1em; } }
       #jumbotron div span#companysubtitle h2 {

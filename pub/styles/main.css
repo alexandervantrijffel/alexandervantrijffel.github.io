@@ -295,7 +295,11 @@ div#pagecontent {
     max-width: 212px;
     padding: 0 6px; }
     .service > div {
-      max-width: 152px; } }
+      max-width: 152px; }
+  #menu {
+    padding: 0 12px; }
+  .pagecontainer, .centralcontainer, .pagecontainerdark {
+    padding: 24px 12px; } }
 
 @media screen and (max-width: 746px) {
   .service {

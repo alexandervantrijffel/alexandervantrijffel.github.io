@@ -267,16 +267,6 @@ div#pagecontent {
     width: 292px\9;
     max-width: 292px;
     text-align: left; }
-    @media screen and (max-width: 1202px) {
-      .service > div {
-        max-width: 204px; } }
-    @media screen and (max-width: 938px) {
-      .service > div {
-        max-width: 152px; } }
-    @media screen and (max-width: 746px) {
-      .service > div {
-        max-width: 100%;
-        float: none; } }
   .service i {
     width: 48px !important;
     content: "";
@@ -293,17 +283,3 @@ div#pagecontent {
     font-size: 1.4em;
     position: relative;
     font-weight: 500; }
-
-@media screen and (max-width: 1202px) {
-  .service {
-    max-width: 276px; } }
-
-@media screen and (max-width: 938px) {
-  .service {
-    max-width: 212px;
-    padding: 0 6px; } }
-
-@media screen and (max-width: 746px) {
-  .service {
-    max-width: 100%;
-    float: none; } }

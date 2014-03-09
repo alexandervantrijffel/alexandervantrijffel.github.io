@@ -1,0 +1,27 @@
+@media screen and (max-width: $breaklarge) {
+	.service {
+		max-width: 276px;	
+		&>div {
+			max-width: 204px;
+		}
+	}	
+}
+@media screen and (max-width: $breakmedium) {
+	.service {
+		max-width: 212px;
+		padding: 0 6px;	
+		&>div {
+			max-width: 152px;
+		}
+	}
+}
+@media screen and (max-width: $breaksmall) {
+	.service {
+		max-width: 100%;
+		float: none;	
+		&>div {
+			max-width: 100%;
+			float: none;
+		}
+	}	
+}

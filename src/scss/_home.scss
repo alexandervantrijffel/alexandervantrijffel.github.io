@@ -1,6 +1,9 @@
 #jumbotron {
 	background: url('../img/rotterdam.jpg') no-repeat right center;
-	background-size: cover;
+	-moz-background-size: cover;
+  	-webkit-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 	width: 100%;
 	height: 100%;
 	height: 400px;
@@ -12,6 +15,11 @@
 			width: 50%;
 			max-width: 440px;
 			position: relative;
+			@media screen and (max-width: $breaksmall) {
+				float: none;
+				width: 100%;
+				max-width: 100%;
+			}
 		}	
 
 		span {
@@ -33,19 +41,36 @@
 			}
 			&#companyheader {
 				top: 102px;
-				max-width: 386px;
-				width: 100%;
+				left: 200px;
+				width: 386px\9; // IE 8
+				max-width: 386px;				
 				text-align: center;
+
+				@media screen and (max-width: $breaklarge) {
+					left: 0;
+				}
+				@media screen and (max-width: $breaksmall) {
+					font-size: 1em;
+				}
 				h2 {
 					display: inline-block;
+					
 				}
 			}
 			&#companysubtitle {
 				top: 120px;
 				text-align: left;
-				max-width: 386px;
-				width: 100%;
+				left: 200px;
+				width: 386px\9; // IE 8
+				max-width: 386px;				
 				text-align: center;
+
+				@media screen and (max-width: $breaklarge) {
+					left: 0;
+				}
+				@media screen and (max-width: $breaksmall) {
+					font-size: 1em;
+				}
 				h2 {
 					display: inline-block;
 				}	
@@ -65,15 +90,40 @@
 		line-height: 2em;
 		border-bottom: 2px solid $structuraturquoise;
 	}
+	#servicewrap {
+		margin: 0 auto;
+	}
 	.service {
 		float:left;
-		width: 368px;
+		width: 370px\9; // IE 8
+		max-width: 370px;
+		@media screen and (max-width: $breaklarge) {
+			max-width: 276px;
+		}
+		@media screen and (max-width: $breakmedium) {
+			max-width: 212px;
+			padding: 0 6px;
+		}
+		@media screen and (max-width: $breaksmall) {
+			max-width: 100%;
+			float: none;
+		}
 		margin: 15px 0;
-		padding-right: 24px;
+		padding: 0 12px;
 		&>div {
 			float: left;
-			width: 100%;
+			width: 292px\9; // IE 8
 			max-width: 292px;
+			@media screen and (max-width: $breaklarge) {
+				max-width: 204px;
+			}
+			@media screen and (max-width: $breakmedium) {
+				max-width: 152px;
+			}
+			@media screen and (max-width: $breaksmall) {
+				max-width: 100%;
+				float: none;
+			}
 			text-align: left;
 		}
 		i {

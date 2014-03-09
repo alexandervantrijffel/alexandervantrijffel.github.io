@@ -57,12 +57,12 @@ div#pagecontent {
     padding: 48px;
     margin: 16px auto;
     text-align: center;
-    //@extend .debug;
 }
 .contentwrap {
+    width: 1170px\9; // IE 8
     max-width: 1170px;
+    width: auto;
     margin: 0 auto;
-    //@extend .debug;
 }
 #menu {
     padding: 0 48px;
@@ -102,6 +102,16 @@ div#pagecontent {
         float: left;
         text-align: center;
         margin-top: 6px;
+        @media screen and (max-width: $breaklarge) {
+        }
+        @media screen and (max-width: $breakmedium) {
+            font-size: 1.2em;
+            width: 100%;
+            float: none;
+            margin-bottom: 36px;
+        }
+        @media screen and (max-width: $breaksmall) {
+        }
 
         &#midcol {
             margin-top: 0;
@@ -109,6 +119,7 @@ div#pagecontent {
 
         ul {
             margin: 0 auto;
+            width: 200px\9; // IE 8
             max-width: 200px;
 
             li.social {
@@ -132,7 +143,6 @@ div#pagecontent {
                 }
                 &.github a {
                     background-position: 0px -421px;
-
                 }
             }
         }
@@ -142,9 +152,10 @@ div#pagecontent {
             margin-bottom: 6px;
         }
     }
-    div.first {
-        text-align: left;
-        padding-left: 48px;
+    div#address {
+        max-width: 200px;
+        margin: 0 auto;
+        text-align: left !important;
     }
     img#footerlogo {
         width: 180px;

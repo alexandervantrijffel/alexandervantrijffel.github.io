@@ -24,6 +24,6 @@ $("li.social a").hover(function(inEvent) {
 
 changeYOffset = function(element, change) {
   var position;
-  position = /(\d+)[a-z\s]+(-\d+)/gi.exec(element.css('background-position'));
+  position = /(\d+)[^-\d]+(-\d+)/gi.exec(element.css('background-position'));
   return element.css('background-position', "" + position[1] + "px " + (parseInt(position[2]) + change) + "px");
 };

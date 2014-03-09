@@ -16,5 +16,5 @@ $("li.social a").hover (inEvent)->
 			changeYOffset $(this), -36
 
 changeYOffset = (element, change) ->
-	position = /(\d+)[a-z\s]+(-\d+)/gi.exec element.css 'background-position'
+	position = /(\d+)[^-\d]+(-\d+)/gi.exec element.css 'background-position'
 	element.css 'background-position',"#{position[1]}px #{parseInt(position[2]) + change}px"

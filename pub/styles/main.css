@@ -254,39 +254,29 @@ div#pagecontent {
   border-bottom: 2px solid #40B1B1; }
 #headlines #servicewrap {
   margin: 0 auto; }
-#headlines .service {
+
+.service {
   float: left;
   width: 370px\9;
   max-width: 370px;
   margin: 15px 0;
   padding: 0 12px; }
-  @media screen and (max-width: 1202px) {
-    #headlines .service {
-      max-width: 276px; } }
-  @media screen and (max-width: 938px) {
-    #headlines .service {
-      max-width: 212px;
-      padding: 0 6px; } }
-  @media screen and (max-width: 746px) {
-    #headlines .service {
-      max-width: 100%;
-      float: none; } }
-  #headlines .service > div {
+  .service > div {
     float: left;
     width: 292px\9;
     max-width: 292px;
     text-align: left; }
     @media screen and (max-width: 1202px) {
-      #headlines .service > div {
+      .service > div {
         max-width: 204px; } }
     @media screen and (max-width: 938px) {
-      #headlines .service > div {
+      .service > div {
         max-width: 152px; } }
     @media screen and (max-width: 746px) {
-      #headlines .service > div {
+      .service > div {
         max-width: 100%;
         float: none; } }
-  #headlines .service i {
+  .service i {
     width: 48px !important;
     content: "";
     display: block;
@@ -296,9 +286,23 @@ div#pagecontent {
     -moz-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out; }
-  #headlines .service span {
+  .service span {
     display: inline-block;
     top: -3px;
     font-size: 1.4em;
     position: relative;
     font-weight: 500; }
+
+@media screen and (max-width: 1202px) {
+  .service {
+    max-width: 276px; } }
+
+@media screen and (max-width: 938px) {
+  .service {
+    max-width: 212px;
+    padding: 0 6px; } }
+
+@media screen and (max-width: 746px) {
+  .service {
+    max-width: 100%;
+    float: none; } }

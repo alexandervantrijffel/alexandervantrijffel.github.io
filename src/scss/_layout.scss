@@ -98,7 +98,7 @@ div#pagecontent {
     font-size: 0.8em;
 
     div.col {
-        width: 33%;
+        width: 32%;
         float: left;
         text-align: center;
         margin-top: 6px;
@@ -153,6 +153,7 @@ div#pagecontent {
         }
     }
     div#address {
+        width: 200px\9; // IE 8
         max-width: 200px;
         margin: 0 auto;
         text-align: left !important;

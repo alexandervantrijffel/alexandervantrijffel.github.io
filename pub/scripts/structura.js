@@ -10,7 +10,7 @@ $(".showemail").click(function() {
 
 $(".showphone").click(function() {
   var number;
-  number = ['+', '3', '1', ' ', '(0)', '6', ' ', '1', '2', '9', ' ', '7', '4', '7', ' ', '0', '7'];
+  number = ['+', '3', '1', ' ', '(0)', '6', ' ', '1', '9', '7', ' ', '9', '0', '9', ' ', '5', '7'];
   $(this).children('span').html("<span>" + (number.join('')) + "</span>");
   $(this).attr('title', '');
   return $(this).addClass('nolink');

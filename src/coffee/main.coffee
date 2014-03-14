@@ -5,7 +5,7 @@ $(".showemail").click ->
 	$(this).addClass('nolink')
 
 $(".showphone").click ->
-	number = ['+', '3', '1', ' ', '(0)', '6', ' ', '1', '2', '9', ' ','7', '4', '7', ' ','0', '7']
+	number = ['+', '3', '1', ' ', '(0)', '6', ' ', '1', '9', '7', ' ','9', '0', '9', ' ','5', '7']
 	$(this).children('span').html "<span>#{number.join('')}</span>"
 	$(this).attr('title', '')
 	$(this).addClass('nolink')
@@ -17,4 +17,4 @@ $("li.social a").hover (inEvent)->
 
 changeYOffset = (element, change) ->
 	position = /(\d+)[^-\d]+(-\d+)/gi.exec element.css 'background-position'
-	element.css 'background-position',"#{position[1]}px #{parseInt(position[2]) + change}px"
+	element.css 'background-position',"#{position[1]}px #{parseInt(position[2]) + change}px" 

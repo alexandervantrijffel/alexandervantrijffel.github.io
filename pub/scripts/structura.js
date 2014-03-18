@@ -2,7 +2,7 @@ var changeYOffset;
 
 $(".showemail").click(function() {
   var mail;
-  mail = "lexmail" + "@" + "gmail" + ".com";
+  mail = "alexander" + "@" + "structura" + ".ws";
   $(this).children('span').html("<a href='mailto" + ":" + mail + "'>" + mail + "</a>");
   $(this).attr('title', '');
   return $(this).addClass('nolink');

@@ -1,5 +1,5 @@
 $(".showemail").click ->
-	mail = "lexmail" + "@" + "gmail" + ".com"
+	mail = "alexander" + "@" + "structura" + ".ws"
 	$(this).children('span').html "<a href='mailto" + ":" + mail + "'>" + mail + "</a>"
 	$(this).attr('title', '')
 	$(this).addClass('nolink')

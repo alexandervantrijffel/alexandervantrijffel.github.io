@@ -1,10 +1,10 @@
-$(".showemail").click ->
+$(".js-show-email").click ->
 	mail = "alexander" + "@" + "structura" + ".ws"
 	$(this).children('span').html "<a href='mailto" + ":" + mail + "'>" + mail + "</a>"
 	$(this).attr('title', '')
 	$(this).addClass('nolink')
 
-$(".showphone").click ->
+$(".js-show-phone").click ->
 	number = ['+', '3', '1', ' ', '(0)', '6', ' ', '1', '9', '7', ' ','9', '0', '9', ' ','5', '7']
 	$(this).children('span').html "<span>#{number.join('')}</span>"
 	$(this).attr('title', '')

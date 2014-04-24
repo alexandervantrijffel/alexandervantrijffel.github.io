@@ -1,5 +1,5 @@
 doctype html
-hmtl
+hmtl(lang="en-us")
     head
         title Structura Software Development Consultancy and Solutions
         meta(name="description" content="Structura helps businesses gain competitive advantage by bringing software projects from concept to success.")
@@ -7,7 +7,10 @@ hmtl
         meta(name="rating",content="GENERAL")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="content-type" content="text/html; charset=utf-8")
-        meta(http-equiv="X-UA-Compatible", content="IE=9")
+        meta(http-equiv="X-UA-Compatible" content="IE=Edge")
+        meta(name="apple-mobile-web-app-capable" content="yes")
+        meta(name="apple-mobile-web-app-status-bar-style" content="black-translucent")
+        meta(charset="UTF-8")
         link(href='pub/styles/main.css', rel='stylesheet')
         script
             | (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -20,11 +23,11 @@ hmtl
         div#pageheader
             ul
                 li
-                    a.showphone(title='Show phone number')
+                    a.showphone(class="js-show-phone" title='Show phone number')
                         i.fa.fa-phone 
                         span Phone
                 li 
-                    a.showemail(title='Show email address')
+                    a.showemail(class="js-show-email" title='Show email address')
                         i.fa.fa-envelope-o 
                         span Email
         div#pagecontent

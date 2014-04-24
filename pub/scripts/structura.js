@@ -1,6 +1,6 @@
 var changeYOffset;
 
-$(".showemail").click(function() {
+$(".js-show-email").click(function() {
   var mail;
   mail = "alexander" + "@" + "structura" + ".ws";
   $(this).children('span').html("<a href='mailto" + ":" + mail + "'>" + mail + "</a>");
@@ -8,7 +8,7 @@ $(".showemail").click(function() {
   return $(this).addClass('nolink');
 });
 
-$(".showphone").click(function() {
+$(".js-show-phone").click(function() {
   var number;
   number = ['+', '3', '1', ' ', '(0)', '6', ' ', '1', '9', '7', ' ', '9', '0', '9', ' ', '5', '7'];
   $(this).children('span').html("<span>" + (number.join('')) + "</span>");

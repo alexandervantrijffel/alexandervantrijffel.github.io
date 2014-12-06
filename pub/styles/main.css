@@ -193,7 +193,7 @@ div#pagecontent {
   width: 100%;
   height: 100%;
   height: 400px;
-  margin: 0 0 48px 0; }
+  margin: 0; }
   #jumbotron div div {
     float: left;
     width: 50%;

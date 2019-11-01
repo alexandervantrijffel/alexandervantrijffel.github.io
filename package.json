@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "devDependencies": {
     "buffer": "*",
-    "growl": "~1.7.0",
+    "growl": "~1.10.5",
     "grunt": "^0.4.5",
     "grunt-contrib-coffee": "*",
     "grunt-contrib-cssmin": "~0.7.0",
